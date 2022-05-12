@@ -93,7 +93,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
             colorInvert={colorInvert}
           />
         </Box>
-        <Box marginLeft={4}>
+        {/* <Box marginLeft={4}>
           <Button
             variant="contained"
             color="primary"
@@ -104,7 +104,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
           >
             Buy now
           </Button>
-        </Box>
+        </Box> */}
       </Box>
       <Box sx={{ display: { xs: 'block', md: 'none' } }} alignItems={'center'}>
         <Button

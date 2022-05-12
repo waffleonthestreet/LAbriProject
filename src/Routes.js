@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes as ReactRoutes, Route, Navigate } from 'react-router-dom';
 import viewsRoutes from 'views/routes';
 import docsRoutes from 'docs/routes';
-import blocksRoutes from 'blocks/routes';
+// import blocksRoutes from 'blocks/routes';
 import demosRoutes from 'demos/routes';
 
 const Routes = () => {
@@ -14,9 +14,9 @@ const Routes = () => {
       {docsRoutes.map((item, i) => (
         <Route key={i} path={item.path} element={item.renderer()} />
       ))}
-      {blocksRoutes.map((item, i) => (
+      {/* {blocksRoutes.map((item, i) => (
         <Route key={i} path={item.path} element={item.renderer()} />
-      ))}
+      ))} */}
       {demosRoutes.map((item, i) => (
         <Route key={i} path={item.path} element={item.renderer()} />
       ))}

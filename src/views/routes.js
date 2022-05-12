@@ -53,7 +53,7 @@ import {
   AccountSecurity as AccountSecurityView,
   NotFound as NotFoundView,
   NotFoundCover as NotFoundCoverView,
-  SchedulesCal as SchedulesCalView,
+  ReserveCalendar as ReserveCalendarView,
 } from 'views';
 
 const routes = [
@@ -62,8 +62,8 @@ const routes = [
     renderer: (params = {}) => <IndexView {...params} />,
   },
   {
-    path: '/SchedulesCal',
-    renderer: (params = {}) => <SchedulesCalView {...params} />,
+    path: '/ReserveCalendar',
+    renderer: (params = {}) => <ReserveCalendarView {...params} />,
   },
 
   {
