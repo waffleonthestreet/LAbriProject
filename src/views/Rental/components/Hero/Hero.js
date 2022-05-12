@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
+
 import { alpha, useTheme } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import Box from '@mui/material/Box';
@@ -8,6 +9,7 @@ import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import InputAdornment from '@mui/material/InputAdornment';
+import Grid from '@mui/material/Grid';
 
 import Container from 'components/Container';
 
@@ -68,7 +70,7 @@ const Hero = () => {
               Find the house of your dreams
             </Typography>
           </Box>
-          <Box
+          {/* <Box
             padding={{ xs: 3, sm: 6 }}
             width={1}
             component={Card}
@@ -163,7 +165,69 @@ const Hero = () => {
                 .
               </Typography>
             </Box>
-          </Box>
+          </Box> */}
+          <Grid container spacing={4}>
+            <Grid item xs={12} sm={6}>
+              <Box
+                padding={{ xs: 3, sm: 6 }}
+                width={1}
+                component={Card}
+                boxShadow={4}
+                data-aos="fade-up"
+              >
+                <Box
+                  display={'flex'}
+                  justifyContent={'space-between'}
+                  alignItems={{ xs: 'flex-start', sm: 'center' }}
+                  flexDirection={{ xs: 'column', sm: 'row' }}
+                >
+                  <Box>
+                    <Typography fontWeight={700} variant={'h6'} gutterBottom>
+                      I share a room
+                    </Typography>
+                    <Typography>Over 20,000 users searching a place</Typography>
+                  </Box>
+                  <Box display="flex" marginTop={{ xs: 2, md: 0 }}>
+                    <Button
+                      variant="contained"
+                      size="large"
+                      color={'secondary'}
+                    >
+                      Search
+                    </Button>
+                  </Box>
+                </Box>
+              </Box>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <Box
+                padding={{ xs: 3, sm: 6 }}
+                width={1}
+                component={Card}
+                boxShadow={4}
+                data-aos="fade-up"
+              >
+                <Box
+                  display={'flex'}
+                  justifyContent={'space-between'}
+                  alignItems={{ xs: 'flex-start', sm: 'center' }}
+                  flexDirection={{ xs: 'column', sm: 'row' }}
+                >
+                  <Box>
+                    <Typography fontWeight={700} variant={'h6'} gutterBottom>
+                      I need a place
+                    </Typography>
+                    <Typography>Over 20,000 users searching a place</Typography>
+                  </Box>
+                  <Box display="flex" marginTop={{ xs: 2, md: 0 }}>
+                    <Button variant="contained" color="primary" size="large">
+                      Search
+                    </Button>
+                  </Box>
+                </Box>
+              </Box>
+            </Grid>
+          </Grid>
         </Box>
       </Container>
     </Box>

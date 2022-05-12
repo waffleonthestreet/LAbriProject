@@ -21,23 +21,23 @@ const Rental = () => {
   return (
     <Main colorInvert={true}>
       <Hero />
-      <Box bgcolor={'alternate.main'}>
+      {/* <Box bgcolor={'alternate.main'}>
         <Container>
           <Search />
         </Container>
-      </Box>
-      <Container>
+      </Box> */}
+      {/* <Container>
         <Teaser />
-      </Container>
-      <Container sx={{ paddingTop: '0 !important' }}>
+      </Container> */}
+      {/* <Container sx={{ paddingTop: '0 !important' }}>
         <Articles />
-      </Container>
+      </Container> */}
       <Box bgcolor={'alternate.main'}>
         <Container>
           <FeaturedProperties />
         </Container>
       </Box>
-      <Container>
+      {/* <Container>
         <Places />
       </Container>
       <Box bgcolor={'alternate.main'}>
@@ -55,7 +55,7 @@ const Rental = () => {
       </Box>
       <Container>
         <AskExpert />
-      </Container>
+      </Container> */}
     </Main>
   );
 };

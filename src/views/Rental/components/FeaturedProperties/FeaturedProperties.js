@@ -27,38 +27,38 @@ const mock = [
     size: '2.800',
     location: 'Via Venini 33, 20150 Milan Italy',
   },
-  {
-    media: 'https://assets.maccarianagency.com/backgrounds/img29.jpg',
-    title: 'Open space with garden',
-    time: '6:15 PM - 8:00 PM',
-    price: '$280.000',
-    size: '1.400',
-    location: 'Via Lagrange 5, 20175 Milan, Italy',
-  },
-  {
-    media: 'https://assets.maccarianagency.com/backgrounds/img30.jpg',
-    title: 'Fully renovated',
-    time: '6:15 PM - 8:00 PM',
-    price: '$300.000',
-    size: '2.100',
-    location: 'Via Lagrange 5, 20175 Milan, Italy',
-  },
-  {
-    media: 'https://assets.maccarianagency.com/backgrounds/img31.jpg',
-    title: 'Loft design',
-    time: '6:15 PM - 8:00 PM',
-    price: '$280.000',
-    size: '1.800',
-    location: 'Via Lagrange 5, 20175 Milan, Italy',
-  },
-  {
-    media: 'https://assets.maccarianagency.com/backgrounds/img32.jpg',
-    title: 'Vacation house',
-    time: '6:15 PM - 8:00 PM',
-    price: '$340.000',
-    size: '2.600',
-    location: 'Via Lagrange 5, 20175 Milan, Italy',
-  },
+  // {
+  //   media: 'https://assets.maccarianagency.com/backgrounds/img29.jpg',
+  //   title: 'Open space with garden',
+  //   time: '6:15 PM - 8:00 PM',
+  //   price: '$280.000',
+  //   size: '1.400',
+  //   location: 'Via Lagrange 5, 20175 Milan, Italy',
+  // },
+  // {
+  //   media: 'https://assets.maccarianagency.com/backgrounds/img30.jpg',
+  //   title: 'Fully renovated',
+  //   time: '6:15 PM - 8:00 PM',
+  //   price: '$300.000',
+  //   size: '2.100',
+  //   location: 'Via Lagrange 5, 20175 Milan, Italy',
+  // },
+  // {
+  //   media: 'https://assets.maccarianagency.com/backgrounds/img31.jpg',
+  //   title: 'Loft design',
+  //   time: '6:15 PM - 8:00 PM',
+  //   price: '$280.000',
+  //   size: '1.800',
+  //   location: 'Via Lagrange 5, 20175 Milan, Italy',
+  // },
+  // {
+  //   media: 'https://assets.maccarianagency.com/backgrounds/img32.jpg',
+  //   title: 'Vacation house',
+  //   time: '6:15 PM - 8:00 PM',
+  //   price: '$340.000',
+  //   size: '2.600',
+  //   location: 'Via Lagrange 5, 20175 Milan, Italy',
+  // },
 ];
 
 const FeaturedProperties = () => {
@@ -110,7 +110,7 @@ const FeaturedProperties = () => {
             item
             xs={12}
             sm={6}
-            md={4}
+            md={6}
             key={i}
             data-aos={'fade-up'}
             data-aos-delay={i * 100}
