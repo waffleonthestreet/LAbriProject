@@ -10,9 +10,12 @@ import CardActions from '@mui/material/CardActions';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 
+import Room1 from 'assets/floor1.jpg';
+import Room2 from 'assets/floor2.jpg';
+
 const mock = [
   {
-    media: 'https://assets.maccarianagency.com/backgrounds/img27.jpg',
+    media: Room1,
     title: 'Cozy apartament',
     time: '2:00 PM - 5:00 PM',
     price: '$320.000',
@@ -20,7 +23,7 @@ const mock = [
     location: 'Via E. Gola 4, 20147 Milan, Italy',
   },
   {
-    media: 'https://assets.maccarianagency.com/backgrounds/img28.jpg',
+    media: Room2,
     title: 'Villa with the pool',
     time: '11:30 AM - 1:00 AM',
     price: '$450.000',

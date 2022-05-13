@@ -13,7 +13,11 @@ const ReserveCalendar = () => {
   const getCalendarData = async (fetchInfo, successCallback) => {
     console.log(fetchInfo);
     try {
-      successCallback([{ title: 'event1', date: '2022-05-15' }]);
+      successCallback([
+        { title: 'event1', date: '2022-05-15', color: '#e65cae' },
+        { title: 'event2', date: '2022-05-15', color: '#76b04f' },
+        { title: 'event2', date: '2022-05-17', color: '#c4d134' },
+      ]);
     } catch (error) {
       console.log(error);
     }

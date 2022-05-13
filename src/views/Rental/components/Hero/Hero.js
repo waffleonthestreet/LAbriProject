@@ -12,6 +12,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 import Grid from '@mui/material/Grid';
 
 import Container from 'components/Container';
+import Background1 from 'assets/bg1.jpg';
 
 const Hero = () => {
   const theme = useTheme();
