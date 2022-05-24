@@ -13,6 +13,7 @@ import {
   Partners,
   Places,
   Reviews,
+  Features,
   Search,
   Teaser,
 } from './components';
@@ -35,6 +36,9 @@ const Rental = () => {
       <Box bgcolor={'alternate.main'}>
         <Container>
           <FeaturedProperties />
+        </Container>
+        <Container>
+          <Features />
         </Container>
       </Box>
       {/* <Container>

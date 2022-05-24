@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import { alpha, useTheme } from '@mui/material/styles';
 import Card from '@mui/material/Card';
@@ -16,6 +17,10 @@ import Background1 from 'assets/bg1.jpg';
 
 const Hero = () => {
   const theme = useTheme();
+  let navigate = useNavigate();
+  function handleClick() {
+    navigate('/ReserveCalendar');
+  }
 
   return (
     <Box
@@ -55,7 +60,7 @@ const Hero = () => {
                 color: 'common.white',
               }}
             >
-              Need help selecting a rental service provider?
+              라브리 펜션에 오신 것을 환영합니다
             </Typography>
             <Typography
               variant="h6"
@@ -66,9 +71,9 @@ const Hero = () => {
                 color: 'common.white',
               }}
             >
-              Let us guide you home.
+              라브리 펜션의 이야기를 둘러보시고
               <br />
-              Find the house of your dreams
+              바다가 아름다운 마을 울진에 놀러오세요.
             </Typography>
           </Box>
           {/* <Box
@@ -184,15 +189,18 @@ const Hero = () => {
                 >
                   <Box>
                     <Typography fontWeight={700} variant={'h6'} gutterBottom>
-                      I share a room
+                      예약 현황 보기
                     </Typography>
-                    <Typography>Over 20,000 users searching a place</Typography>
+                    <Typography>
+                      각 호실의 예약 현황을 한 눈에 볼 수 있어요
+                    </Typography>
                   </Box>
                   <Box display="flex" marginTop={{ xs: 2, md: 0 }}>
                     <Button
                       variant="contained"
                       size="large"
                       color={'secondary'}
+                      onClick={handleClick}
                     >
                       Search
                     </Button>
@@ -216,9 +224,11 @@ const Hero = () => {
                 >
                   <Box>
                     <Typography fontWeight={700} variant={'h6'} gutterBottom>
-                      I need a place
+                      라브리 이야기
                     </Typography>
-                    <Typography>Over 20,000 users searching a place</Typography>
+                    <Typography>
+                      라브리에서는 어떤 일들이 일어나고 있을까요?
+                    </Typography>
                   </Box>
                   <Box display="flex" marginTop={{ xs: 2, md: 0 }}>
                     <Button variant="contained" color="primary" size="large">

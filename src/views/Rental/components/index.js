@@ -8,3 +8,4 @@ export { default as Places } from './Places';
 export { default as Reviews } from './Reviews';
 export { default as Search } from './Search';
 export { default as Teaser } from './Teaser';
+export { default as Features } from './Features';

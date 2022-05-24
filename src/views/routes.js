@@ -57,9 +57,13 @@ import {
 } from 'views';
 
 const routes = [
+  // {
+  //   path: '/',
+  //   renderer: (params = {}) => <IndexView {...params} />,
+  // },
   {
     path: '/',
-    renderer: (params = {}) => <IndexView {...params} />,
+    renderer: (params = {}) => <RentalView {...params} />,
   },
   {
     path: '/ReserveCalendar',

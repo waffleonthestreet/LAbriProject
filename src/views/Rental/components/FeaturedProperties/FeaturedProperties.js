@@ -16,19 +16,19 @@ import Room2 from 'assets/floor2.jpg';
 const mock = [
   {
     media: Room1,
-    title: 'Cozy apartament',
+    title: '1호실 (1층)',
     time: '2:00 PM - 5:00 PM',
     price: '$320.000',
-    size: '2.400',
-    location: 'Via E. Gola 4, 20147 Milan, Italy',
+    size: '30',
+    location: '경북 울진군 울진읍 온양2길 26 1층',
   },
   {
     media: Room2,
-    title: 'Villa with the pool',
+    title: '2호실 (2층)',
     time: '11:30 AM - 1:00 AM',
     price: '$450.000',
-    size: '2.800',
-    location: 'Via Venini 33, 20150 Milan Italy',
+    size: '20',
+    location: '경북 울진군 울진읍 온양2길 26 2층',
   },
   // {
   //   media: 'https://assets.maccarianagency.com/backgrounds/img29.jpg',
@@ -93,7 +93,7 @@ const FeaturedProperties = () => {
             fontWeight: 700,
           }}
         >
-          Better way to find a property
+          라브리 펜션의 1층과 2층을 둘러보세요.
         </Typography>
         <Typography
           variant="h6"
@@ -101,10 +101,8 @@ const FeaturedProperties = () => {
           color={'text.secondary'}
           data-aos={'fade-up'}
         >
-          Find vacation rentals, cabins, beach houses, unique homes and
-          experiences
-          <br />
-          around the world - all made possible by hosts on our website
+          바다를 마주보고 있는 라브리 펜션은 1층과 2층으로 구성되어 있습니다.
+          <br />더 자세한 정보를 원하신다면 각 호실의 상세보기를 눌러주세요.
         </Typography>
       </Box>
       <Grid container spacing={4}>
@@ -145,7 +143,7 @@ const FeaturedProperties = () => {
                     padding={2}
                     width={1}
                   >
-                    <Box
+                    {/* <Box
                       padding={1}
                       bgcolor={'background.paper'}
                       boxShadow={1}
@@ -154,8 +152,8 @@ const FeaturedProperties = () => {
                       <Typography sx={{ fontWeight: 600 }}>
                         {item.price}
                       </Typography>
-                    </Box>
-                    <Box
+                    </Box> */}
+                    {/* <Box
                       padding={1}
                       bgcolor={'background.paper'}
                       boxShadow={1}
@@ -178,7 +176,7 @@ const FeaturedProperties = () => {
                           d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
                         />
                       </Box>
-                    </Box>
+                    </Box> */}
                   </Box>
                 </CardMedia>
                 <CardContent>
@@ -236,7 +234,7 @@ const FeaturedProperties = () => {
                       />
                     </Box>
                     <Typography variant={'subtitle2'} color="text.secondary">
-                      {item.size} Sq Ft
+                      {item.size} 평
                     </Typography>
                   </Box>
                   <CardActions sx={{ justifyContent: 'flex-end' }}>
@@ -260,7 +258,7 @@ const FeaturedProperties = () => {
                         </Box>
                       }
                     >
-                      Learn more
+                      상세보기
                     </Button>
                   </CardActions>
                 </CardContent>
